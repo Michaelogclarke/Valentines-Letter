@@ -124,9 +124,9 @@
                 ❤️ Tap to Open ❤️
             </div>
             <div class="inside">
-                <h2>Will you be my Valentine? 💕</h2>
+                <h2 id="valentine">Will you be my Valentine? 💕</h2>
                 <div class="buttons">
-                    <button class="orig-yes-btn" id="orig-yes-btn" onclick="startFireworks()" >Yes!💖</button>
+                    <button class="orig-yes-btn" id="orig-yes-btn" onclick="startFireworks(),yippe()" >Yes!💖</button>
                     <button class="yes-btn" id="yesBtn" onclick="startFireworks()" >Yes! 💖</button>
                     <button class="no-btn" id="noBtn" onclick="swapButtons()">No 😢</button>                   
                 </div>
@@ -211,6 +211,9 @@
             canvas.width = window.innerWidth;
             canvas.height = window.innerHeight;
         });
+    function yippe(){
+        document.getElementById("valentine").textContent = "YIPPEEEEEE💖";
+    }
     </script>
 
 </body>
